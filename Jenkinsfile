@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'g++ temp.cpp -o temp'
-                 build job: 'PES1UG20CS258-1', wait: false
+                 build job: 'PES1UG20CS509-1', wait: false
                  echo 'Build by CS258 successful'
             }
         }
@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                
-                ec 'Deploy by CS258 successful'
+                echo 'Deploy by CS258 successful'
             }
         }
     }
